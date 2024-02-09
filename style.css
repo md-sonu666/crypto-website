@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace sans-serif;
+}
+
+::selection{
+    background-color: rgb(114, 206, 206);
+    color: rgb(27, 168, 69);
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(112, 192, 224);
+
+}
+
+.logo{
+    font-size: 22px;
+    color: rgb(112, 192, 224);
+    padding: 20px;
+    text-shadow: 2px 2px 4px blue;
+}
+
+nav {
+    display: flex;
+    
+
+    
+    
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    
+}
+
+nav ul li{
+    position: relative;
+    padding: 0px 20px;
+    font-size: 22px;
+    color: rgb(99, 93, 93);
+    cursor: pointer;
+    
+}
+
+/* nav ul li::before{
+    content: "";
+    position: absolute;
+    background-color: red;
+    left: 0;
+    top: 100%;
+    width: 0%;
+    height: 2px;
+
+    
+} */
+
+nav ul li::after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    left: 0px;
+    top: 100%;
+    width: 0%;
+    height: 2px;
+    
+    
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
+/* nav ul li:hover::before{
+    width: 100%;
+} */
+
+.container{
+    display: flex;
+    
+}
+
+.left{
+    width: 50%;
+    padding: 30px;
+}
+.left h1{
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.left h1 samp{
+    /* text-shadow: 5px 5px 7px green,
+    8px 8px 10px blue; */
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.left p{
+    font-size: 25px;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+    line-height: 40px;
+}
+
+.left p::first-letter{
+    font-size: 50px;
+    color: rgb(25, 122, 151);
+    font-style: italic;
+}
+.right{
+    width: 50%;
+    padding: 30px;
+}
+
+.right h1{
+    font-size: 35px;
+    text-align: center;
+    color: blue;
+    text-shadow: 4px 4px 5px black;
+}
+
+.right a{
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    box-shadow: 12px 12px  5px gray;
+    text-shadow: 5px 5px 4px  #000;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+a:visited{
+          color: blue;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: green;
+}
+.right p{
+    font-size: 25px;
+    letter-spacing: 5px;
+    word-spacing: 8px;
+    line-height: 45px;
+}
+
+.right p::first-line{
+    background-color: #a72586;
+    color: rgb(143, 151, 158);
+}
+
+.right button{
+    background-color: rgb(67, 67, 201);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 12px 12px 4px #000;
+    border: none;
+    cursor: pointer;
+    box-shadow: 12px 12px 4px 1px  #181616;
+    
+}
+
+button:visited{
+    color: blue;
+}
+
+button:hover{
+    color: red;
+}
+
+button:active{
+    color: green;
+}
+
+
+
